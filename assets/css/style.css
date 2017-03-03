@@ -155,7 +155,24 @@ h3,
   margin:0 auto;
 }
 
+#start #btn-area{
+  float:right;
+  width: 200px;
+  margin: 10px;
+}
+#start #btn-area button{
+  padding: 5px 10px 5px 10px;
 
-
+}
+button{
+    background-color: #4aaaa5;
+    border: 1px solid #000000;
+    color: #fffadd;
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-shadow: 1px 1px 1px #000000;
+    cursor: pointer;
+}
 
 

@@ -23,14 +23,33 @@ var questionsArray=[ {
 			answer:"Alien"
 		},
 			{
-			ques: "What is the average velocity of a (European) laden swallow?",
-			choices: ["36 mph", "24 mph", "11 mph", "100 mph"],
-			answer:"24 mph"
-		}	
+			ques: "What is NOT an artifact that Dr. Strange uses?",
+			choices: ["The Cloak of Levitation", "The Sword of Eternity", "The Eye of Agamotto", "Book of Vishinti"],
+			answer:"The Sword of Eternity"
+		},
+		{
+			ques: "Who said 'Kiss my Grits' on the show Alice?",
+			choices: ["Flo", "Alice", "Vera", "Jolene"],
+			answer:"Flo"
+		},	
+		{
+			ques: "Dirk Benedict played which character in Battlestar Galactia?",
+			choices: ["Boxey", "Apollo", "Starbuck", "Adama"],
+			answer:"Starbuck"
+		},	
+		{
+			ques: "Han Solo is from which planet?",
+			choices: ["Dagobah", "Corellia ", "Tatooine", "Endor"],
+			answer:"Corellia"
+		},	
+		{
+			ques: "What gives a light saber its color?",
+			choices: ["The Force", "It's owners personality", "Crystals", "Lasers"],
+			answer:"Crystals"
+		}		
 ];
 
 function startGame(){
-	
 	getQuestion();
 }
 startGame();
@@ -44,9 +63,11 @@ function getQuestion() {
 	rightAnswer = questionsArray[randomQuestion].answer;
 	$("#currentQuestion").html(questionsArray[randomQuestion].ques);
 	// grab the choices
-	for (i=0; i < questionsArray[randomQuestion].choices.length; i++) {
+	for (i=0; i < 
+	questionsArray[randomQuestion].choices.length; i++) {
 		$("#RDO"+ i).html('<input type="radio" id="answerRDO' + i + '" onclick="userGuess()" name="answerRDO" value="' + questionsArray[randomQuestion].choices[i] + '" />&nbsp;' + questionsArray[randomQuestion].choices[i]);
 	}
+	askedQuestions = questionsArray.pop();
 }
 
 function checkAnswers(answer){
@@ -66,8 +87,6 @@ function checkAnswers(answer){
 		getQuestion();	
 	}, answerTime);
 }
-
-
 
 function startInterval(){
     start = parseInt($("#countDown").html());
