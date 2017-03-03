@@ -1,7 +1,7 @@
 
 //global variables
 var answerTime = 3000;
-var questionTime = 10000;
+var questionTime = 30000;
 var intervalTimer = 1000;
 var timerAnswer="";
 var totalQuestion = 5;
@@ -33,6 +33,7 @@ function startGame(){
 	
 	getQuestion();
 }
+startGame();
 
 function getQuestion() {
 	$("#correctAnswers").html("");
