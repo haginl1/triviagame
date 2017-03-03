@@ -12,12 +12,21 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="assets/javascript/game.js" language="javascript" type="text/javascript"></script>
 </head>
+<script>
+  $( document ).ready(function() {//make sure DOM  is ready
+   
 
+   
+    
+  });//end make sure DOM  is ready
+
+   
+</script>
 <body>
 
   <header id="masthead">
     <div class="container">
-      <div id="timer">Timer Here</div>
+      <div id="countDown"></div>
     </div>
   </header>
 
@@ -26,9 +35,9 @@
     <section class="sidebar">
       <h1>Results</h1>
       <div id="score">
-        <p >Correct: <span id="correct"><span></p>
-        <p >Incorrect: <span id= "wrong"><span></p>
-        <p >Not Answered: <span id= "noAnswers"><span></p>
+        <p >Correct: <span id="correct"><span>0</p>
+        <p >Incorrect: <span id= "wrong"><span>0</p>
+        <p >Not Answered: <span id= "noAnswers"><span>0</p>
       </div>
     </section>
     <section class="main-section">
@@ -39,19 +48,19 @@
             </div>
             <table >
              <tr>
-              <td style= "min-width: 100px; max-width: 250px; padding-left:10px; padding-right:10px;">
-                <input type="radio" name="answerRDO" id=RDO1>Blue
+              <td id="RDO0" style= "min-width: 100px; max-width: 250px; padding-left:10px; padding-right:10px;">
+                
               </td>
-              <td style= "min-width: 100px; max-width: 250px; padding-left:10px; padding-right:10px;">
-                <input type="radio" name="answerRDO" id=RDO2/>Blue
+              <td id="RDO1" style= "min-width: 100px; max-width: 250px; padding-left:10px; padding-right:10px;">
+                
               </td>
               </tr>
               <tr>
-              <td style= "min-width: 100px; max-width: 250px; padding-left:10px; padding-right:10px;">
-                <input type="radio" name="answerRDO" id=RDO3>Blue
+              <td id="RDO2" style= "min-width: 100px; max-width: 250px; padding-left:10px; padding-right:10px;">
+               
               </td>
-              <td style= "min-width: 100px; max-width: 250px; padding-left:10px;padding-right:10px;">
-                <input type="radio" name="answerRDO" id=RDO4/>Blue
+              <td id="RDO3" style= "min-width: 100px; max-width: 250px; padding-left:10px;padding-right:10px;">
+                
               </td>
             </tr>
             </table>
